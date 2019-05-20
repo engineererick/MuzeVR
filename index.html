@@ -2,13 +2,40 @@
 <html lang="en">
   <head>
     <title>Proyecto ISB - MUZEVR</title>
+	<style type="text/css">
+		#slider {
+			overflow: hidden;
+		}
+		
+		#slider figure {
+			position: relative;
+			width: 500%;
+			margin: 0;
+			left: 0;
+			animation: 20s slider infinite;
+		}
+		
+		#slider figure img{
+			width: 20%;
+			float: left;
+		}
+		
+		@keyframes slider {
+			0%{left: 0;}
+			20%{left: 0;}
+			25%{left: -100%;}
+			45%{left: -100%;}
+			50%{left: -200%;}
+			70%{left: -200%;}
+		}
+		
+	</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/slider.css">
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -109,31 +136,21 @@
       </div>
     </section>
 	
-	<center>
-		<h3>SOBRE LA APLICACIÓN</h3>
-    	<p>El usuario tendrá tiempo para "estudiar" acerca de los planetas del Sistema Solar, después de aprender acerca de ciertas características de cada planeta, se le hará un examen para medir sus
-		conociminetos.</p>
-	</center>
-	<div class="slider">
-					<ul>
-						<li>
-							<img src="images/1.jpeg">
-						</li>
-						<li>
-							<img src="images/3.jpeg" >
-						</li>
-						<li>
-							<img src="images/5.jpeg" >
-						</li>
-						<li>
-							<img src="images/9.jpeg" >
-						</li>
-						<li>
-							<img src="images/7.jpeg" >
-						</li>
-					</ul>
-	</div>
+	<div class="container">
+		<div class="col-md-12 text-center mb-5 pt-5" data-aos="fade-up">
+			<h3 align="center">SOBRE LA APLICACIÓN</h3>
+			<p>El usuario tendrá tiempo para "estudiar" acerca de los planetas del Sistema Solar, después de aprender acerca de ciertas características de cada planeta, se le hará un examen para medir sus
+			conociminetos.</p>
 
+			<div id="slider">
+				<figure>
+					<img src="images/1.jpeg">
+					<img src="images/9.jpeg">
+					<img src="images/7.jpeg">
+				</figure>
+			</div>
+		</div>
+	</div>
       <div class="container">
             <div class="col-md-12 text-center mb-5 pt-5" data-aos="fade-up"><center>
                 <h3>EXTRA</h3>
